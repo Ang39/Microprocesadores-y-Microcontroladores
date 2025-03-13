@@ -23,7 +23,7 @@ store_numbers:
 	    SUBS R5, R5, #1         ; Decrement R5 by 1 (remaining iterations)
 	    BNE store_numbers       ; If R5 is not zero (i.e., there are still numbers to store), repeat the loop
 
-	    STR R4, [R2], #0x04     ; Store the accumulated sum (R4) at the memory address pointed by R2 (0x20000084), then post-increment R2 by 4
+	    STR R4, [R2], #0X04     ; Store the accumulated sum (R4) at the memory address pointed by R2 (0x20000084), then post-increment R2 by 4
 	    MUL R4, R4, R6          ; Multiply the sum (R4) by 2 (R6 = 2), result stored in R4
 	    STR R4, [R3]            ; Store the multiplied sum in the address pointed by R3 (overwriting previous value at R3)
 
