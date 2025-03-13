@@ -10,9 +10,9 @@ main:
 	    MOVT R2, #0X2000        ; Load the upper 16 bits of the base address for the sum calculation (0x20000084) into R2 (R2 = 0x20000084)
 
 	    MOV R1, #0X01           ; Initialize the counter to 1 (the first number to store)
-	    MOV R4, #0x00              ; Initialize the accumulator for the sum (R4 will store the running sum, starting at 0)
+	    MOV R4, #0X00              ; Initialize the accumulator for the sum (R4 will store the running sum, starting at 0)
 
-	    MOV R5, #0x32             ; Set the number of iterations (32 times)
+	    MOV R5, #0X32             ; Set the number of iterations (32 times)
 	    MOV R6, #0X02           ; Set the multiplication factor to 2 (R6 = 2)
 
 store_numbers:
