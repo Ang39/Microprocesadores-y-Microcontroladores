@@ -1,4 +1,4 @@
-	  .global main; Declaring the main function
+	        .global main; Declaring the main function
 		.data; Declaring the data section (RAM)
 		.text; Declaring the program code section (EEPROM)
 main
